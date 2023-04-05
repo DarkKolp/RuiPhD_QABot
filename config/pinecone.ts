@@ -2,7 +2,7 @@
  * Change the index and namespace to your own
  */
 
-const PINECONE_INDEX_NAME = 'maria';
+const PINECONE_INDEX_NAME = 'ruiphd';
 
 const PINECONE_NAME_SPACE = 'default'; //namespace is optional for your vectors
 

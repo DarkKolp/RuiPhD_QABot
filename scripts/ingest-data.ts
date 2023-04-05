@@ -6,7 +6,7 @@ import { PDFLoader } from 'langchain/document_loaders';
 import { PINECONE_INDEX_NAME, PINECONE_NAME_SPACE } from '@/config/pinecone';
 
 /* Name of directory to retrieve files from. You can change this as required */
-const filePath = 'docs/training_text.pdf';
+const filePath = 'docs/Rui Oliveira-Silva_PhD_Dissertation.pdf';
 
 export const run = async () => {
   try {

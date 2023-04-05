@@ -21,13 +21,13 @@
 .textarea {
   position: relative;
   resize: none;
-  font-size: 1.2rem;
-  padding: 1rem 2rem 1rem 5rem;
+  font-size: 1.1rem;
+  padding: 1rem 2rem 1rem 2rem;
   width: 75vw;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   border: 1px solid #d9d9e3;
-  background: #000000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #000;
   outline: none;
 }
 
@@ -37,7 +37,7 @@
 
 .textarea:focus {
   outline: none;
-  border-color: #ffffff;
+  border-color: #6b7280;
   box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.5);
 }
 
@@ -47,7 +47,7 @@
 
 .generatebutton {
   position: absolute;
-  top: 1.1rem;
+  top: 0.87rem;
   right: 1rem;
   color: rgb(165, 162, 162);
   background: none;
@@ -95,14 +95,14 @@
 }
 
 .usermessage {
-  background: #000;
+  background: #ffffff;
   padding: 1.5rem;
-  color: #fff;
+  color: #000;
 }
 
 .usermessagewaiting {
   padding: 1.5rem;
-  color: #fff;
+  color: #000;
   background: linear-gradient(to left, #07080938, #1a1c2024, #07080936);
   background-size: 200% 200%;
   background-position: -100% 0;
@@ -121,9 +121,9 @@
 }
 
 .apimessage {
-  background: #000000;
+  background: #f9fafb;
   padding: 1.5rem;
-  color: #ffffff;
+  color: #000;
   animation: fadein 0.5s;
 }
 
@@ -191,7 +191,7 @@
 .cloud {
   width: 75vw;
   height: 65vh;
-  background: #000000;
+  background: #ffffff;
   border-radius: 0.5rem;
   border: 1px solid #d9d9e3;
   display: flex;

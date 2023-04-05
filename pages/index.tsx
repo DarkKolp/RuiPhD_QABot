@@ -27,7 +27,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: "Hello there! I'm MarIA a AI powered Nuno's personal assistant." ,
+        message: "Hello there! I am an AI powered Q&A bot, to help you navigate throught Rui O.Silva PhD Thesis." ,
         type: 'apiMessage',
       },
     ],
@@ -165,9 +165,9 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="mx-auto bg-bgdark flex flex-col gap-4">
-          <h1 className="text-2xl text-designColor font-bold leading-[1.1] tracking-tighter text-center">
-            Chat With MarIA, Nuno&apos;s Personal AI Assistant.
+        <div className="mx-auto flex flex-col gap-4">
+          <h1 className="text-2xl mt-3 font-bold leading-[1.1] tracking-tighter text-center">
+            Ask anything about Rui Silva&apos;s PhD thesis.
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
