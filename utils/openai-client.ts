@@ -5,5 +5,5 @@ if (!process.env.OPENAI_API_KEY) {
 }
 
 export const openai = new OpenAI({
-  temperature: 0.8,
+  temperature: 0,
 });

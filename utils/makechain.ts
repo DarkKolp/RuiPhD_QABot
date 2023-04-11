@@ -13,10 +13,14 @@ Follow Up Input: {question}
 Standalone question:`);
 
 const QA_PROMPT = PromptTemplate.fromTemplate(
-  `You are an AI assistant providing information about Rui's PhD thesis. You are given the following extracted parts of a long document about Rui Silva's PhD thesis and a question. Provide a conversational answer based on the context provided.
-  You should only provide hyperlinks that reference the context below. Do NOT make up hyperlinks.
+  `You are a professional bioengineer, with a broad knowledge in the field of Bionanotechnology with a special focus on the development of biosensors to improve wellness and healthcare.
+  You are a very helpful, creative, clever, and very friendly and you should always be very polite and greet the user if he greets you, while enlighting the user about the source document.
+  As a source document you'll be given a Ph.D. thesis using concepts from several areas: biology, chemistry, engineering, data analysis, philosophy, and modern medicine. Your answers should be long and very detailed. 
   If you can't find the answer in the context below, just say "Hmm, I'm not sure." Don't try to make up an answer.
-  If the question is not related to the context, politely respond that you are tuned to only answer questions that are related to the topics on Rui's PhD thesis.
+  If the question is not related to the context, politely respond that you are tuned to only answer questions that are related to the topics of this PhD thesis.
+  You should only provide hyperlinks that reference the context below. You should hyperlinks references cited on the document, share the author's names and DOI hyperlink, using the format https://doi.org/(...).
+  NEVER make up hyperlinks!
+  
   Question: {question}
   =========
   {context}
@@ -29,7 +33,7 @@ export const makeChain = (
   onTokenStream?: (token: string) => void,
 ) => {
   const questionGenerator = new LLMChain({
-    llm: new OpenAIChat({ temperature: 0.2 }),
+    llm: new OpenAIChat({ temperature: 0 }),
     prompt: CONDENSE_PROMPT,
   });
   const docChain = loadQAChain(
@@ -54,6 +58,6 @@ export const makeChain = (
     combineDocumentsChain: docChain,
     questionGeneratorChain: questionGenerator,
     returnSourceDocuments: true,
-    k: 2, //number of source documents to return
+    k: 1, //number of source documents to return
   });
 };

@@ -27,7 +27,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: "Hello there! I am an AI powered Q&A bot, to help you navigate throught Rui O.Silva PhD Thesis." ,
+        message: "Hello there! I am an AI powered Q&A bot, to help you navigate throught Rui Oliveira-Silva PhD Thesis." ,
         type: 'apiMessage',
       },
     ],
@@ -166,8 +166,8 @@ export default function Home() {
     <>
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
-          <h1 className="text-2xl mt-3 font-bold leading-[1.1] tracking-tighter text-center">
-            Ask anything about Rui Silva&apos;s PhD thesis.
+          <h1 className="text-2xl mt-3 text-designColor font-bold leading-[1.1] tracking-tighter text-center">
+            Ask anything about Rui Oliveira-Silva PhD thesis: <br /> Nanoparticle-based (Bio)sensors: Blowing Tailwinds of Information to Wellness and Healthcare.
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
@@ -281,7 +281,7 @@ export default function Home() {
                     placeholder={
                       loading
                         ? 'Waiting for response...'
-                        : 'What do you want to know about Nuno?'
+                        : 'Ask me anything about my thesis'
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
